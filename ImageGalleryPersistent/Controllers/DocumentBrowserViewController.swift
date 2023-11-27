@@ -29,7 +29,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
     
     var template: URL?
     
-    // MARK: UIDocumentBrowserViewControllerDelegate
+    // MARK: - UIDocumentBrowserViewControllerDelegate
     
     func documentBrowser(_ controller: UIDocumentBrowserViewController, didRequestDocumentCreationWithHandler importHandler: @escaping (URL?, UIDocumentBrowserViewController.ImportMode) -> Void) {
         importHandler(template, .copy)
@@ -53,7 +53,7 @@ class DocumentBrowserViewController: UIDocumentBrowserViewController, UIDocument
         // TODO: put an alert here saying "couldn't load document"
     }
     
-    // MARK: Document Presentation
+    // MARK: - Document Presentation
     
     func presentDocument(at documentURL: URL) {
         
